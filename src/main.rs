@@ -1,5 +1,5 @@
 // crmps - Template Creator
-// Licensed Under MIT And Apache 2.0
+// Licensed Under Apache 2.0
 // Written By: (Abdul-Muiz-Iqbal)[https://www.github.com/Abdul-Muiz-Iqbal]
 
 // API
