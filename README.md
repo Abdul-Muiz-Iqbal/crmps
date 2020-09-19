@@ -6,7 +6,13 @@ That definition has no meaning, I just wanted to name it crmps
 - crmps is a template manager, now what is a template manager?
 - an example is due here:
 - say you have a file structure that you use for ALL of your Javascript Projects, such as:
-- INSERT IMAGE HERE
+![File Structure](https://github.com/Abdul-Muiz-Iqbal/crmps/blob/master/structure.PNG)
+- that looks like:  
+`src` </br>
+`|__index.js`</br>
+`|__index.html`</br>
+`|__index.css` </br>
+`README.md`  
 - Now you would have to create these files again and again whenever you start a new project.
 - this can get increasingly time consuming with more complex directory structures
 - `crmps` solves this issue with a simple command.
