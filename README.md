@@ -66,3 +66,4 @@
         ```$ crmps register --subcommand "runBot" --file "Path/To/File/Bot.js"```  
    - Invoke a custom command:  
         ```$ crmps runBot```  
+Created By [@Abdul-Muiz-Iqbal](https://www.github.com/Abdul-Muiz-Iqbal)
