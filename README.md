@@ -1,4 +1,4 @@
-## `crmps` - A Template Manager
+## `crmps` - A Template Manager                              Created By [@Abdul-Muiz-Iqbal](https://www.github.com/Abdul/Muiz/Iqbal)
 ---
 ### What is `crmps`?
    `crmps` is a template manager made in [Rust](https://www.rust-lang.org). Its fast, predictable and versatile. `crmps` allows you to create folders that you can use as templates for other projects. In this way, there is little need of repeating the same CLI commands just to create a basic project. Say you organize your python scripts as follows:
@@ -66,4 +66,3 @@
         ```$ crmps register --subcommand "runBot" --file "Path/To/File/Bot.js"```  
    - Invoke a custom command:  
         ```$ crmps runBot```  
-Created By [@Abdul-Muiz-Iqbal](https://www.github.com/Abdul-Muiz-Iqbal)
