@@ -34,13 +34,10 @@
    ```crmps new DirName -py```
    `crmps` also has numerous other quality of life features, described below in the Usage section.
 ### Getting Started
-   Make sure you have cargo installed
-    Run the commands:
-    ```
-    $ git clone https://www.github.com/Abdul-Muiz-Iqbal/crmps.git  
-    $ cd crmps  
-    $ cargo build --release  
-    ```
+   Make sure you have cargo installed. Run the commands:  
+    ```$ git clone https://www.github.com/Abdul-Muiz-Iqbal/crmps.git```  
+    ```$ cd crmps```  
+    ```$ cargo build --release```  
     Or alternatively, download the [release binary](https://www.github.com/Abdul-Muiz-Iqbal) (NOT_CREATED_YET)
 ### Requirements
    - [Cargo](https://crates.io/crates/cargo) >= 1.49  
