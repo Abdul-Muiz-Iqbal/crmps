@@ -9,7 +9,7 @@ fn main() {
 
     let error: Result<(), Error> = match opt {
         Crmps::New { name, template } => Ok(println!("Project {:#?} Created With {:#?} Template", name, template)),
-        _ => Ok(println!("This wasn't supposed to happen"))
+        _ => Ok(println!("This wasn't supposed to happen!"))
     };
 
     if let Err(e) = error {
