@@ -1,68 +1,59 @@
-## `crmps` - A Template Manager                              Created By [@Abdul-Muiz-Iqbal](https://www.github.com/Abdul/Muiz/Iqbal)
----
-### What is `crmps`?
-   `crmps` is a template manager made in [Rust](https://www.rust-lang.org). Its fast, predictable and versatile. `crmps` allows you to create folders that you can use as templates for other projects. In this way, there is little need of repeating the same CLI commands just to create a basic project. Say you organize your python scripts as follows:
-   ```
-   DirName/  
-   |__ src/  
-       |__ main.py  
-       |__ lib.py  
-   ```
-   Translating this into CLI commands, this structure can be created as follows:
-   ```
-   $ mkdir DirName/
-   $ mkdir DirName/src
-   $ touch DirName/src/main.py
-   $ touch DirName/src/lib.py
-   ```
-   This can get big really fast, especially if you like a lot of directories. With `crmps`, all you have to do is create a template for this structure:
-   ```
-   py/
-   |__ src/
-       |__ main.py
-       |__ lib.py
-   ```
-   Next you have to move this template to `crmps` database:
-   ```
-   $ crmps add "PathToTemplate" -m
-   ```
-   Finally to create a new project with this template:
-   ```
-   $ crmps init ProjectName -templateName
-   ```
-   Therefore, using our previous example:
-   ```crmps new DirName -py```
-   `crmps` also has numerous other quality of life features, described below in the Usage section.
-### Getting Started
-   Make sure you have cargo installed. Run the commands:  
-    ```$ git clone https://www.github.com/Abdul-Muiz-Iqbal/crmps.git```  
-    ```$ cd crmps```  
-    ```$ cargo build --release```  
-    Or alternatively, download the [release binary](https://www.github.com/Abdul-Muiz-Iqbal) (NOT_CREATED_YET)
+# crmps
+`crmps` is a command-line template manager for projects. It creates (from saved "templates") entire project directories with all the files and directories already created and indexed for you.
+
+It was made in Rust, and has been made fast and versatile, so that you can avoid repeating the same commands (or worse, using the GUI) to get started with working on your projects.
+
+## Example
+Say you index your Python projects as follows:
+```
+project_name/  
+|__ README.md
+|__ src/  
+    |__ main.py
+```
+Instead of having to type out
+```
+mkdir project_name
+```
+then
+```
+cd project_name
+```
+then
+```
+mkdir src
+```
+... 😴 Sorry I dozed off. Instead of doing that, `crmps` allows you to create all of this using:
+```
+crmps init project_name -template_name
+```
+All that you have to do is create the entire project directory once, and add it to your templates using:
+```
+crmps add "path/to/project/directory" -m
+```
+Now isn't that efficient!
+
+## Getting Started
 ### Requirements
-   - [Cargo](https://crates.io/crates/cargo) >= 1.49  
-   - [Rust](https://www.rust-lang.org) = 2018 Edition  
-### Usage
-   - Creating a new project:  
-        ```$ crmps new ProjectName -TemplateName```  
-   - Adding a new template:  
-        ```$ crmps add PathToTemplate```  
-   - Removing a template:  
-        ```$ crmps rem "PathToTemplate (Can be an asterisk (*) to remove all templates )"```  
-   - Tagging (A way to easily find projects) a project:  
-        ```$ crmps tag ProjectName --with "#Python #Django #Oops"```  
-   - Untagging tags from a project (Use * to remove all tags):  
-        ```$ crmps untag ProjectName --tags "#Oops"```  
-   - Locating a project by name or by tags:  
-        ```$ crmps locate "DirName" --in "DirNameOr -d"```  
-        ```$ crmps locate "#Python #Django"```  
-   - Listing the contents of a directory till the specfied recursion limit:  
-        ```$ crmps ls --till 5```  
-   - Set a directory for crmps to default to when using the -d flag:  
-        ```$ crmps default "D:/Code"```  
-   - Register a command to execute when you give crmps a file with a specific extension (Use {{fileName}} to replace with filename):  
-        ```$ crmps register --extension ".js" --command "node {{fileName}}"```  
-   - Save a file as a new subcommand to crmps:  
-        ```$ crmps register --subcommand "runBot" --file "Path/To/File/Bot.js"```  
-   - Invoke a custom command:  
-        ```$ crmps runBot```  
+`crmps` requires the following:
+- [Cargo](https://crates.io/crates/cargo) >= 1.49  
+- [Rust](https://www.rust-lang.org) = 2018 Edition 
+### Installation
+Either `clone` the directory using `git clone https://www.github.com/Abdul-Muiz-Iqbal/crmps.git` or download it.
+
+Now, build `crmps`. In the directory run: `cargo build --release`.
+
+## Features
+Of course, `crmps` has a ton of other features. The main ones are listed below:
+- Just
+- The
+- Main
+- Features
+- Please
+- Like:
+- `command`: _short_ description.
+
+## Credits
+Project by [@Abdul-Muiz-Iqbal](https://github.com/Abdul-Muiz-Iqbal).
+
+<!-- Being laconic is a gift. -->
